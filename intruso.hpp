@@ -1,11 +1,13 @@
 #include <string>
+#include <map>
+#include <vector>
 
 class Intruso {
-
+    /*Continue a implementação da classe Intruso*/
     private:
-        std::string _senha_digitada;
-        std::string _codigo_do_dia;
-        
+        std::map<char, std::string> mapa;
+        std::vector<std::map<char, std::string>> senhas;
+
     public:
         Intruso();
         void set_senha_vazada(std::string vazou);
